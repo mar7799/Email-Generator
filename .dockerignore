@@ -1,0 +1,19 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+.git/
+.gitignore
+
+# Local runtime/cache/state files
+.email_ui_prefs.json
+.email_ui_job_state.json
+.email_scheduler_state.json
+emails_daily_stats.csv
+
+# Keep local secrets and large artifacts out of build context.
+*.pdf
+*.csv
+*.txt

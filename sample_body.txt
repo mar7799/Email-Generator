@@ -1,0 +1,19 @@
+Good Morning,
+
+I hope you are doing well. My name is Amram Madipalli, and I am a Software Engineer with 5+ years of experience building scalable web applications and cloud-native microservices using Java, Spring Boot, and React.js. I have experience working on enterprise systems involving REST APIs, microservices architecture, SQL optimization, CI/CD pipelines, and cloud platforms such as AWS and Azure. 
+
+Currently, I am working at KPMG, where I develop and enhance Spring Boot microservices supporting enterprise risk and compliance applications. My work includes designing scalable APIs, optimizing complex SQL queries, resolving production incidents, and implementing automation tools including LLM-assisted incident summarization for faster root cause analysis. Previously, I worked at Accenture, where I built microservices and React-based applications supporting business workflows and improved system performance through backend optimizations and structured monitoring. 
+
+I am currently exploring Software Engineer / Java Full-Stack / Backend / Cloud roles where I can contribute to building scalable distributed systems and modern cloud-native platforms. I would appreciate the opportunity to connect and discuss if my background aligns with any roles you are currently hiring for.
+
+Please find my resume attached for your reference.
+
+Thank you for your time, and I look forward to hearing from you.
+
+Best regards,
+Amram Madipalli
+📞 +1 (972) 399-9119
+📧 amrammadipalli@gmail.com
+https://www.linkedin.com/in/amram7779/
+https://github.com/mar7799
+https://mar7799.github.io/mar_portfolio/

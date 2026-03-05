@@ -1,0 +1,125 @@
+:root {
+  --bg: #f5f7fb;
+  --panel: #ffffff;
+  --text: #1a1f2b;
+  --accent: #0b6efd;
+  --border: #dbe2ef;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(180deg, #eef3ff, var(--bg));
+  color: var(--text);
+}
+
+.page {
+  max-width: 1200px;
+  margin: 24px auto;
+  padding: 0 16px 24px;
+  display: grid;
+  gap: 16px;
+}
+
+.card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 14px;
+}
+
+input, select, button {
+  border: 1px solid #c8d2e6;
+  border-radius: 8px;
+  padding: 9px;
+  font-size: 14px;
+}
+
+button {
+  background: #0b6efd;
+  color: white;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.controls label {
+  min-width: 140px;
+}
+
+.pager {
+  align-items: center;
+}
+
+.status {
+  white-space: pre-wrap;
+  background: #0f172a;
+  color: #d5e4ff;
+  border-radius: 8px;
+  padding: 10px;
+  overflow-x: auto;
+}
+
+.small {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #4b576d;
+}
+
+.hint {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #4b576d;
+}
+
+.tableWrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+  padding: 8px;
+  font-size: 13px;
+}
+
+@media (max-width: 900px) {
+  .grid2, .grid3 {
+    grid-template-columns: 1fr;
+  }
+}

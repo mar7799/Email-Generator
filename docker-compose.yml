@@ -1,0 +1,26 @@
+version: '3.9'
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    container_name: email-backend
+    ports:
+      - "1800:8000"
+    volumes:
+      - ./:/data
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    container_name: email-frontend
+    ports:
+      - "1300:3000"
+    environment:
+      - NEXT_PUBLIC_API_BASE=http://localhost:1800
+    depends_on:
+      - backend
+    restart: unless-stopped
