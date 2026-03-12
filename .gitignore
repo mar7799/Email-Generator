@@ -32,3 +32,11 @@ emails_daily_stats.csv
 .DS_Store
 .vscode/
 .idea/
+
+# Test data (local/testing)
+test data/
+
+# Local environment files
+backend/.env
+.env
+frontend/.env.local

@@ -110,6 +110,32 @@ cd /Users/mar/projects/email-generator/frontend
 NEXT_PUBLIC_API_BASE=http://localhost:8080 npm run dev -- -p 13000
 ```
 
+## Environment (.env) and one-command start
+
+This repo loads environment variables from `backend/.env` when running the backend locally. To avoid committing secrets, a template is provided at `backend/.env.example`.
+
+1. Copy the example into place and edit values:
+
+```bash
+cp backend/.env.example backend/.env
+# then edit backend/.env and set real API keys and SMTP credentials
+```
+
+2. Start both services with one command using the helper script at the repo root:
+
+```bash
+# Use Docker Compose (recommended):
+./start_all.sh docker
+
+# Or start locally (uvicorn + npm dev):
+./start_all.sh local
+```
+
+Notes:
+- `start_all.sh local` expects `uvicorn` and `npm` to be available on your PATH.
+- The script will warn if `backend/.env` is missing; copy from the example and set secrets before running.
+- Docker compose is already configured to pass `ANTHROPIC_API_KEY` into the backend container.
+
 ## Security Notes
 - Do not commit sensitive files (recipient CSVs, resumes, local state files).
 - `.gitignore` already excludes common sensitive/generated files (`*.csv`, `*.pdf`, caches, local runtime data).
